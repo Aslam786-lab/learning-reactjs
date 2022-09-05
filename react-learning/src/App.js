@@ -7,7 +7,8 @@ import './App.css';
 // import Counter from './components/StateCounterExample5';
 // import GreetD from './components/DestructuringProps6';
 // import FunctionClick from './components/FunctionClickEvent7';
-import ClassClick from './components/ClassClickEvent8';
+// import ClassClick from './components/ClassClickEvent8';
+import EventBind from './components/EventBind9';
 
 
 function App() {
@@ -51,9 +52,15 @@ function App() {
       {/* ============================================================= */}
       {/* Event handler with function and class */}
       {/* <FunctionClick/> */}
-      
-      <ClassClick/>
 
+      {/* <ClassClick/> */}
+
+      {/* ================================================================ */}
+      {/* Binding Event handler with class component */}
+      {/* <EventBind/> */}
+
+      {/* ================================================================== */}
+      
     </div>
   );
 }
