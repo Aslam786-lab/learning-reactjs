@@ -8,8 +8,10 @@ import './App.css';
 // import GreetD from './components/DestructuringProps6';
 // import FunctionClick from './components/FunctionClickEvent7';
 // import ClassClick from './components/ClassClickEvent8';
-import EventBind from './components/EventBind9';
-
+// import EventBind from './components/EventBind9';
+// import ParentComponent from './components/child-to-parent-10/ParentComponent';
+// import UserGreeting from './components/ConditionalRendering11';
+import ListRendering from './components/list-rendering-12/ListRendering12';
 
 function App() {
   return (
@@ -60,7 +62,19 @@ function App() {
       {/* <EventBind/> */}
 
       {/* ================================================================== */}
-      
+      {/* Child Component calling the parent method then we have to pass parent function as prop to Child Component */}
+      {/* <ParentComponent/> */}
+
+      {/* ======================================================================= */}
+      {/* <UserGreeting/> */}
+
+      {/* =========================================================================== */}
+
+      {/* rendering the list of items from array */}
+      <ListRendering/>
+
+
+
     </div>
   );
 }
