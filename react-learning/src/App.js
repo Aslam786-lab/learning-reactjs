@@ -11,7 +11,10 @@ import './App.css';
 // import EventBind from './components/EventBind9';
 // import ParentComponent from './components/child-to-parent-10/ParentComponent';
 // import UserGreeting from './components/ConditionalRendering11';
-import ListRendering from './components/list-rendering-12/ListRendering12';
+// import ListRendering from './components/list-rendering-12/ListRendering12';
+// import Stylesheets from './components/css-13/Stylesheets';
+// import Inline from './components/css-13/Inline';
+// import Form from './components/FormHandling14';
 
 function App() {
   return (
@@ -71,8 +74,20 @@ function App() {
       {/* =========================================================================== */}
 
       {/* rendering the list of items from array */}
-      <ListRendering/>
+      {/* <ListRendering/> */}
 
+      {/* ============================================================================ */}
+      {/* styling in react */}
+      {/* <Stylesheets primary={true}/> */}
+
+      {/* <Inline/> */}
+
+      {/* =========================================================================== */}
+
+      {/* Form handling with react */}
+      {/* <Form/> */}
+
+      {/* =========================================================================== */}
 
 
     </div>
