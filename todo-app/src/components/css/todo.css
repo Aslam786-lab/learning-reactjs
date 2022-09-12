@@ -1,0 +1,13 @@
+.listElements{
+display: flex;
+justify-content: flex-end;
+
+}
+
+li,button{
+    margin: 0px 60px;
+}
+
+.strike{
+    text-decoration: line-through;
+}

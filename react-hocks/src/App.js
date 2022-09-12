@@ -13,7 +13,13 @@ import React from 'react';
 // import DataFetching5 from './components/useEffect/api request/DataFetching5';
 // import PostFetching from './components/useEffect/api request/PostFetching';
 
-import ComponentA from './components/useContext/ComponentA';
+// import ComponentA from './components/useContext/ComponentA';
+// import FocusInput from './components/useRef/FocusInput';
+// import Timer from './components/useRef/Timer';
+
+// import Counter from './components/useReducer/Counter1';
+// import Counter2 from './components/useReducer/Counter2';
+// import Counter3 from './components/useReducer/Counter3';
 
 export const UserContext = React.createContext()
 export const CityContext = React.createContext()
@@ -54,13 +60,24 @@ function App() {
       {/* ================================================= */}
 
 
-      {/* context api */}
-      <UserContext.Provider value="Ak">
+      {/* useContext hook */}
+      {/* <UserContext.Provider value="Ak">
         <CityContext.Provider value="LA">
           <ComponentA/>
         </CityContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
 
+      {/* ======================================================== */}
+      {/* useRef hook */}
+      {/* <FocusInput/> */}
+      {/* <Timer/> */}
+
+
+      {/* ================================================================ */}
+      {/* useReducer hook */}
+      {/* <Counter/> */}
+      {/* <Counter2/> */}
+      {/* <Counter3/> */}
 
     </div>
   );

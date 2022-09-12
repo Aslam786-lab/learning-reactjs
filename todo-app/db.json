@@ -1,0 +1,36 @@
+{
+  "todo": [
+    {
+      "text": "Wokeup",
+      "id": 1
+    },
+    {
+      "text": "Jog",
+      "id": 2
+    },
+    {
+      "text": "Meditation",
+      "id": 3
+    },
+    {
+      "text": "Work",
+      "id": 4
+    },
+    {
+      "text": "Lunch",
+      "id": 5
+    },
+    {
+      "text": "Meeting",
+      "id": 6
+    },
+    {
+      "text": "Snacks",
+      "id": 7
+    },
+    {
+      "text": "Sleep",
+      "id": 8
+    }
+  ]
+}
