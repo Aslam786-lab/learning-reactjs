@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import './css/todo.css'
 import { url } from './Todos'
 
-function Todo({item}) {
+function Todo({item, setRender}) {
 
   const [isActive,setActive] = useState(false)
 
@@ -11,6 +11,7 @@ function Todo({item}) {
     fetch(`${url}/${item.id}`,{
       method:'DELETE'
     })
+    setRender(item.id)
   }
 
   const doneHandler = () => {

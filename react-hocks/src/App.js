@@ -1,6 +1,7 @@
 
 import './App.css';
-import React from 'react';
+import React,{useReducer} from 'react';
+
 // import ArrayAsState from './components/useState/ArrayAsState4';
 // import ObjAsState from './components/useState/ObjAsState3';
 // import Counter from './components/Counter1';
@@ -21,10 +22,42 @@ import React from 'react';
 // import Counter2 from './components/useReducer/Counter2';
 // import Counter3 from './components/useReducer/Counter3';
 
-export const UserContext = React.createContext()
-export const CityContext = React.createContext()
+import ComponentA from './components/useReducer/reducer with context/ComponentA';
+import ComponentB from './components/useReducer/reducer with context/ComponentB';
+import ComponentC from './components/useReducer/reducer with context/ComponentC';
+import RefComponent from './components/useRef/PersistValues';
+
+// export const UserContext = React.createContext()
+// export const CityContext = React.createContext()
+
+export const CountContext = React.createContext()
+
+//this is for useReducer with useContext
+const initialState =0
+const reducer = (state, action) =>{
+    switch (action) {
+        case 'increment':
+            return state+1;
+            
+        case 'decrement':
+            return state-1;
+            
+        case 'reset':
+            
+          return  initialState;
+
+        default:
+            return state;
+    }
+    
+}
+
 
 function App() {
+
+  //this is for useReducer with useContext
+  const [count, dispatch] = useReducer(reducer, initialState)
+
   return (
     <div className="App">
       {/* UseState Hook */}
@@ -71,13 +104,24 @@ function App() {
       {/* useRef hook */}
       {/* <FocusInput/> */}
       {/* <Timer/> */}
-
+      {/* <RefComponent/> */}
 
       {/* ================================================================ */}
       {/* useReducer hook */}
       {/* <Counter/> */}
       {/* <Counter2/> */}
       {/* <Counter3/> */}
+
+      {/* useReducer with useContext to pass the state betwwn different components*/}
+     
+      <CountContext.Provider value={{countState: count, countDispatch:dispatch}}>
+      Count - {count}
+      <ComponentA/>
+      <ComponentB/>
+      <ComponentC/>
+      </CountContext.Provider>
+
+
 
     </div>
   );

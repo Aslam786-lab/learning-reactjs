@@ -1,6 +1,6 @@
 import React,{useEffect, useRef, useState} from 'react'
 import { url } from './Todos'
-function AddTodo() {
+function AddTodo({setRender}) {
 
     const [todo, setTodo] = useState({text:""})
     const focusInput = useRef(null)
@@ -13,7 +13,7 @@ function AddTodo() {
         if(todo === ""){
             return
         }
-        
+        setRender(todo)
         fetch(url,{
             method: "POST",
             headers: { "Content-Type": "application/json" },
