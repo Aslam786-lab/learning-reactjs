@@ -21,42 +21,47 @@ import React,{useReducer} from 'react';
 // import Counter from './components/useReducer/Counter1';
 // import Counter2 from './components/useReducer/Counter2';
 // import Counter3 from './components/useReducer/Counter3';
+// import RefComponent from './components/useRef/PersistValues';
 
-import ComponentA from './components/useReducer/reducer with context/ComponentA';
-import ComponentB from './components/useReducer/reducer with context/ComponentB';
-import ComponentC from './components/useReducer/reducer with context/ComponentC';
-import RefComponent from './components/useRef/PersistValues';
+// import ComponentA from './components/useReducer/reducer with context/ComponentA';
+// import ComponentB from './components/useReducer/reducer with context/ComponentB';
+// import ComponentC from './components/useReducer/reducer with context/ComponentC';
+
+
+import SlowFunction from './components/useMemo/SlowFunction';
+import ReferentialEquality from './components/useMemo/ReferentialEquality';
+import ThemeNumber from './components/useCallback/ThemeNumber';
 
 // export const UserContext = React.createContext()
 // export const CityContext = React.createContext()
 
-export const CountContext = React.createContext()
+// export const CountContext = React.createContext()
 
-//this is for useReducer with useContext
-const initialState =0
-const reducer = (state, action) =>{
-    switch (action) {
-        case 'increment':
-            return state+1;
+// //this is for useReducer with useContext
+// const initialState =0
+// const reducer = (state, action) =>{
+//     switch (action) {
+//         case 'increment':
+//             return state+1;
             
-        case 'decrement':
-            return state-1;
+//         case 'decrement':
+//             return state-1;
             
-        case 'reset':
+//         case 'reset':
             
-          return  initialState;
+//           return  initialState;
 
-        default:
-            return state;
-    }
+//         default:
+//             return state;
+//     }
     
-}
+// }
 
 
 function App() {
 
   //this is for useReducer with useContext
-  const [count, dispatch] = useReducer(reducer, initialState)
+  // const [count, dispatch] = useReducer(reducer, initialState)
 
   return (
     <div className="App">
@@ -114,12 +119,25 @@ function App() {
 
       {/* useReducer with useContext to pass the state betwwn different components*/}
      
-      <CountContext.Provider value={{countState: count, countDispatch:dispatch}}>
+      {/* <CountContext.Provider value={{countState: count, countDispatch:dispatch}}>
       Count - {count}
       <ComponentA/>
       <ComponentB/>
       <ComponentC/>
-      </CountContext.Provider>
+      </CountContext.Provider> */}
+
+      {/* ============================================================ */}
+
+      {/* useMemo hook */}
+      {/* <SlowFunction/> */}
+      {/* <ReferentialEquality/> */}
+
+
+      {/* ============================================================= */}
+      
+      {/* useCallback hook */}
+      <ThemeNumber/>
+
 
 
 
