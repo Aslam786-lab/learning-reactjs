@@ -1,7 +1,12 @@
 //handling multiple states with multiple reducer
+//Middleware
 const redux = require('redux')
+const reduxLogger = require('redux-logger')
+
 const createStore = redux.createStore
 const combineReducers = redux.combineReducers
+const applyMiddlware = redux.applyMiddleware
+const logger = reduxLogger.createLogger()
 
 //action
 const BUY_CAKE = 'BUY_CAKE'
@@ -64,12 +69,13 @@ const rootReducer = combineReducers({
 })
 
 //creating store
-const store = createStore(rootReducer)
+const store = createStore(rootReducer,applyMiddlware(logger))
 //reading the state from store
 console.log('Initial state',store.getState());
 
 //subcrubing the store
-const unsubscribe = store.subscribe(()=> console.log('Update state', store.getState()))
+// const unsubscribe = store.subscribe(()=> console.log('Update state', store.getState()))
+const unsubscribe = store.subscribe(()=> {})
 
 //updating the store for cake
 store.dispatch(buyCake())
