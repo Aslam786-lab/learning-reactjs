@@ -1,0 +1,4 @@
+export const RETRIEVE_TODOS = 'RETRIEVE_TODOS'
+export const LOADING_TODOS = 'LOADING_TODOS'
+export const CREATE_TODOS = 'CREATE_TODOS'
+export const DELETE_TODOS = 'DELETE_TODOS'

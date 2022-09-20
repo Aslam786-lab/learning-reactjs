@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react'
 import './css/todo.css'
-import { url } from './Todos'
+ const url = "http://localhost:8000/todo"
 
 function Todo({item, setRender}) {
 

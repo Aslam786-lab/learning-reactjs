@@ -1,5 +1,6 @@
 import React,{useEffect, useRef, useState} from 'react'
-import { url } from './Todos'
+
+const url = "http://localhost:8000/todo"
 function AddTodo({setRender}) {
 
     const [todo, setTodo] = useState({text:""})
