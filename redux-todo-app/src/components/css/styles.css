@@ -1,0 +1,83 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-right: 15%;
+}
+
+.text {
+  margin-right: -3%;
+}
+
+.todoItem {
+  list-style: none;
+  margin: 10px;
+  font-size: 20px;
+  line-height: 35px;
+  display: flex;
+  justify-content: end;
+  margin-left: 90px;
+  height: 25px;
+  align-items: center;
+
+
+}
+
+.bothButton {
+  display: flex;
+  position: absolute;
+  right: 35%;
+}
+
+
+.button {
+  position: relative;
+  background-color: #b398c0;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 0px;
+  height: 25px;
+  width: 61px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+
+
+li,
+button.button {
+  margin-left: 90px;
+
+}
+
+.inputText {
+  margin-left: 4%;
+}
+
+.strike-through{
+  text-decoration: line-through;
+}

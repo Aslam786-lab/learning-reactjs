@@ -28,9 +28,11 @@ import React,{useReducer} from 'react';
 // import ComponentC from './components/useReducer/reducer with context/ComponentC';
 
 
-import SlowFunction from './components/useMemo/SlowFunction';
-import ReferentialEquality from './components/useMemo/ReferentialEquality';
-import ThemeNumber from './components/useCallback/ThemeNumber';
+// import SlowFunction from './components/useMemo/SlowFunction';
+// import ReferentialEquality from './components/useMemo/ReferentialEquality';
+// import ThemeNumber from './components/useCallback/ThemeNumber';
+
+import ParentComponent from './components/error-handling-react/ParentComponent';
 
 // export const UserContext = React.createContext()
 // export const CityContext = React.createContext()
@@ -136,8 +138,12 @@ function App() {
       {/* ============================================================= */}
       
       {/* useCallback hook */}
-      <ThemeNumber/>
+      {/* <ThemeNumber/> */}
 
+
+      {/* ==================================================== */}
+      {/* Error boundry in react */}
+      <ParentComponent/>
 
 
 
