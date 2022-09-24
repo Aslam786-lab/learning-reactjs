@@ -4,14 +4,14 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import Todos from './components/Todos';
-import AddTodo from './components/AddTodo';
+// import AddTodo from './components/AddTodo';
 
 function App() {
   return (
     <Provider store={store}>
         <div className="App">
           <Header/>
-          <AddTodo/>
+          {/* <AddTodo/> */}
           <hr/>
           <Todos/>
         </div>
